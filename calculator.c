@@ -5,7 +5,6 @@
  * @param b The number to subtract.
  * @return The difference between a and b.
  */
-
 float subtract(float a, float b) {
     return a-b;
 
@@ -20,6 +19,7 @@ float subtract(float a, float b) {
 float add(float a, float b) {
     return a + b;
 }
+
 /**
  * Multiplies two floating-point numbers.
  *
@@ -30,8 +30,21 @@ float add(float a, float b) {
 float multiply(float a, float b) {
     return a * b;
 }
-float add(float a, float b) {
-    // TODO: implement addition
+
+/**
+ * Divides the first floating-point number by the second.
+ *
+ * @param a The dividend.
+ * @param b The divisor.
+ * @return The quotient of a divided by b, or 0.0 if b is zero.
+ * @note If b is zero, an error message is printed and 0.0 is returned.
+ */
+float divide(float a, float b) {
+    if (b == 0.0) {
+        printf("Error: Division by zero is not allowed\n");
+        return 0.0;
+    }
+    return a / b;
 }
 
 
@@ -59,6 +72,6 @@ int main() {
         printf("Invalid operation\n");
         return 1;
     }
-    
+
     return 0;
 }
