@@ -35,3 +35,18 @@ float add(float a, float b) {
 }
 
 
+#include <stdio.h>
+#include <string.h>
+
+enum Operation { ADD, SUB, MUL, DIV };
+
+int main() {
+    enum Operation op;
+    char operation[10];
+
+    printf("Enter operation (add, sub, mul, div): ");
+    scanf("%s", operation);
+
+    // TODO: map operation to enum
+    return 0;
+}
