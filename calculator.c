@@ -47,6 +47,18 @@ int main() {
     printf("Enter operation (add, sub, mul, div): ");
     scanf("%s", operation);
 
-    // TODO: map operation to enum
+    if (strcmp(operation, "add") == 0) {
+        op = ADD;
+    } else if (strcmp(operation, "sub") == 0) {
+        op = SUB;
+    } else if (strcmp(operation, "mul") == 0) {
+        op = MUL;
+    } else if (strcmp(operation, "div") == 0) {
+        op = DIV;
+    } else {
+        printf("Invalid operation\n");
+        return 1;
+    }
+    
     return 0;
 }
