@@ -1,6 +1,3 @@
-#include <stdio.h>
-
-int main()
-{
-    printf("Hello kontol!");
+float add(float a, float b) {
+    // TODO: implement addition
 }
