@@ -1,3 +1,12 @@
+#include <stdio.h>
+#include <string.h>
+
+// Function prototypes
+float add(float a, float b);
+float subtract(float a, float b);
+float multiply(float a, float b);
+float divide(float a, float b);
+
 /**
  * Subtracts the second floating-point number from the first.
  *
@@ -47,14 +56,11 @@ float divide(float a, float b) {
     return a / b;
 }
 
-
-#include <stdio.h>
-#include <string.h>
-
 enum Operation { ADD, SUB, MUL, DIV };
 
 int main() {
     enum Operation op;
+    float a, b, result;
     char operation[10];
 
     printf("Enter operation (add, sub, mul, div): ");
@@ -73,5 +79,24 @@ int main() {
         return 1;
     }
 
+    printf("Enter two numbers: ");
+    scanf("%f %f", &a, &b);
+
+    switch (op) {
+        case ADD:
+            result = add(a, b);
+            break;
+        case SUB:
+            result = subtract(a, b);
+            break;
+        case MUL:
+            result = multiply(a, b);
+            break;
+        case DIV:
+            result = divide(a, b);
+            break;
+    }
+
+    printf("Result: %.2f\n", result);
     return 0;
 }
