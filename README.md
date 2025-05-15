@@ -7,7 +7,7 @@ A simple C calculator for addition, subtraction, multiplication, and division.
 ### Team Roles
 - David Alexander(2496351592): Main function and divide Function
 - Nicholas Edmund(2406352986): Add function
-- Tubagus Dafa Izza Fariz(2406350122): Subtract function
+- Muhamad Rifqi Fadil Itsnain(2406355306): Subtract function
 - Tubagus Dafa Izza Fariz(2406350122): Multiply function
 
 ### How to Run
